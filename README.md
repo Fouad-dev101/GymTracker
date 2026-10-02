@@ -1,71 +1,253 @@
-# Getting Started with Create React App
+# 🏋️ GymTracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+GymTracker est une application web de suivi sportif développée avec **React.js**.
+Elle permet aux utilisateurs de gérer leurs entraînements, suivre leurs exercices et consulter leur progression.
 
-## Available Scripts
+Le projet est développé par **Mohamed** et **Fouad**.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 Objectif du projet
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Créer une application simple et moderne permettant de :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* 🏋️ Créer et gérer des séances d'entraînement
+* 💪 Ajouter des exercices
+* 🔢 Enregistrer les séries, répétitions et poids
+* 📅 Consulter l'historique des séances
+* 📈 Suivre la progression
+* 👤 Gérer son profil
+* 💾 Sauvegarder les données localement
 
-### `npm test`
+Le projet commencera avec **React.js uniquement** et pourra évoluer vers une architecture complète avec Backend et Base de données.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Technologies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Version actuelle
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* React.js
+* JavaScript
+* React Router
+* Context API
+* LocalStorage
+* CSS / Tailwind CSS
+* Vite
+* Git & GitHub
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🔮 Évolutions futures
 
-### `npm run eject`
+```text
+React.js
+    ↓
+REST API
+    ↓
+Laravel / Node.js
+    ↓
+MySQL
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Fonctionnalités prévues :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* 🔐 Authentication
+* ☁️ Synchronisation des données
+* 📊 Statistiques avancées
+* 🔔 Notifications
+* 🏆 Achievements
+* 🥗 Nutrition tracking
+* 📱 Application mobile
+* 🤖 Fonctionnalités basées sur l'IA
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📂 Structure du projet
 
-## Learn More
+```text
+gymtracker/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── StatCard.jsx
+│   │   ├── WorkoutCard.jsx
+│   │   └── ExerciseCard.jsx
+│   │
+│   ├── pages/
+│   │   ├── Dashboard.jsx
+│   │   ├── Workouts.jsx
+│   │   ├── WorkoutDetails.jsx
+│   │   ├── Exercises.jsx
+│   │   ├── Progress.jsx
+│   │   └── Profile.jsx
+│   │
+│   ├── context/
+│   │   └── GymContext.jsx
+│   │
+│   ├── data/
+│   │   └── exercises.js
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── package.json
+└── README.md
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⚙️ Installation
 
-### Code Splitting
+### 1. Cloner le projet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+git clone <URL_DU_REPOSITORY>
+```
 
-### Analyzing the Bundle Size
+### 2. Entrer dans le projet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+cd gymtracker
+```
 
-### Making a Progressive Web App
+### 3. Installer les dépendances
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm install
+```
 
-### Advanced Configuration
+### 4. Lancer le projet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm run dev
+```
 
-### Deployment
+L'application sera disponible sur l'adresse affichée par Vite.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 👥 Équipe
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-"# GymTracker" 
+### Mohamed
+
+Responsabilités principales :
+
+* Dashboard
+* Workouts
+* Workout Details
+* Context API
+* Gestion des données
+* LocalStorage
+* Progress
+
+### Fouad
+
+Responsabilités principales :
+
+* UI/UX
+* Components
+* Navbar / Sidebar
+* Exercises
+* Profile
+* Forms
+* Responsive Design
+
+---
+
+## 🌿 Git Workflow
+
+Chaque développeur travaille sur sa propre branche.
+
+### Mohamed
+
+```bash
+git checkout -b feature/mohamed
+```
+
+### Fouad
+
+```bash
+git checkout -b feature/fouad
+```
+
+Après avoir terminé une fonctionnalité :
+
+```bash
+git add .
+git commit -m "feat: add workout management"
+git push origin feature/mohamed
+```
+
+Puis créer une **Pull Request** vers `main`.
+
+---
+
+## 📋 Exemple de données
+
+```js
+{
+  id: 1,
+  name: "Push Day",
+  date: "2026-10-01",
+  duration: 65,
+  exercises: [
+    {
+      name: "Bench Press",
+      sets: [
+        {
+          weight: 60,
+          reps: 10
+        },
+        {
+          weight: 70,
+          reps: 8
+        }
+      ]
+    }
+  ]
+}
+```
+
+---
+
+## 📈 Roadmap
+
+### Version 1.0
+
+* [ ] Dashboard
+* [ ] Workouts
+* [ ] Exercises
+* [ ] Workout details
+* [ ] LocalStorage
+* [ ] Progress
+* [ ] Profile
+* [ ] Responsive design
+
+### Version 2.0
+
+* [ ] Backend API
+* [ ] Authentication
+* [ ] Database
+* [ ] User accounts
+* [ ] Cloud synchronization
+
+### Version 3.0
+
+* [ ] Advanced statistics
+* [ ] Achievements
+* [ ] Notifications
+* [ ] Nutrition
+* [ ] Mobile application
+* [ ] AI features
+
+---
+
+## 📜 License
+
+This project is developed for educational and portfolio purposes.
+
+© 2026 Mohamed & Fouad
