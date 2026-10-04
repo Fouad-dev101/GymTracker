@@ -1,8 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders the dashboard shell', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getAllByText(/Tableau de bord/i).length).toBeGreaterThan(0);
+});
+
+test('shows the empty state when there is no workout yet', () => {
+  window.localStorage.clear();
+  render(<App />);
+  expect(screen.getAllByText(/Démarrer une séance/i).length).toBeGreaterThan(0);
 });
